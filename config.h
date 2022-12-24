@@ -68,8 +68,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *dec_backlight[] = {"light", "-U", "10", NULL};
 static const char *inc_backlight[] = {"light", "-A", "10", NULL};
-static const char *inc_volume[] = {"pactl", "set-sink-volume", "3", "+10", NULL};
-static const char *dec_volume[] = {"pactl", "set-sink-volume", "3", "-10", NULL};
+static const char *inc_volume[] = {"pactl", "set-sink-volume", "3", "+10%", NULL};
+static const char *dec_volume[] = {"pactl", "set-sink-volume", "3", "-10%", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
